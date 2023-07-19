@@ -1,0 +1,25 @@
+:root {
+  --color-bg: #242424;
+  --color-font: white;
+}
+
+* {
+  transition: background 0.3s ease-in-out, color ease-in-out;
+}
+
+.dark {
+  --color-bg: #242424;
+  --color-font: white;
+}
+
+.light {
+  --color-bg: white;
+  --color-font: #242424;
+}
+
+.App {
+  // height: 100dvh;
+  width: 100%;
+  background: var(--color-bg);
+  color: var(--color-font);
+}

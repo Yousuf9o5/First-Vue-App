@@ -1,0 +1,55 @@
+.my-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 400px;
+  width: 250px;
+  background: inherit;
+  border: 1px solid rgb(66, 66, 66);
+  border-radius: 15px;
+  color: white;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+
+  &:hover .card-image {
+    scale: 1.2;
+  }
+
+  .card-img-container {
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    border-radius: inherit;
+    height: 150px;
+  }
+
+  .card-image {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    transition: scale 0.3s ease-in-out;
+  }
+
+  .card-header {
+    width: 100%;
+  }
+
+  .card-header {
+    margin: 0;
+  }
+
+  .card-desc {
+    margin: 0;
+  }
+
+  .card-num {
+    margin: 0;
+  }
+}
+
+.checked {
+  color: black;
+  background: white;
+}

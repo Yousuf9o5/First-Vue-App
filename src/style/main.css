@@ -1,0 +1,76 @@
+/* ########## App ########## */
+:root {
+  --color-bg: #242424;
+  --color-font: white;
+}
+
+* {
+  transition: background 0.3s ease-in-out, color ease-in-out;
+}
+
+.dark {
+  --color-bg: #242424;
+  --color-font: white;
+}
+
+.light {
+  --color-bg: white;
+  --color-font: #242424;
+}
+
+.App {
+  width: 100%;
+  background: var(--color-bg);
+  color: var(--color-font);
+}
+
+/* ########## Card ########## */
+.my-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 400px;
+  width: 250px;
+  background: inherit;
+  border: 1px solid rgb(66, 66, 66);
+  border-radius: 15px;
+  color: white;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+}
+.my-card:hover .card-image {
+  scale: 1.2;
+}
+.my-card .card-img-container {
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: inherit;
+  height: 150px;
+}
+.my-card .card-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+  transition: scale 0.3s ease-in-out;
+}
+.my-card .card-header {
+  width: 100%;
+}
+.my-card .card-header {
+  margin: 0;
+}
+.my-card .card-desc {
+  margin: 0;
+}
+.my-card .card-num {
+  margin: 0;
+}
+
+.checked {
+  color: black;
+  background: white;
+}/*# sourceMappingURL=main.css.map */
